@@ -115,7 +115,6 @@ print("\nLenght of X_train ",len(X_train))
 print("\nX_test\n")
 print(X_test)
 print("\nLenght of X_test ",len(X_test))
-
 ```
 
 ## OUTPUT:
