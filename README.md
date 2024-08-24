@@ -128,12 +128,14 @@ print("\nLenght of X_test ",len(X_test))
 
 
 <br>
+
 ## Outliers
 
 ![3](https://github.com/user-attachments/assets/2c42b7d1-cedf-49a6-8c00-28fe2f759499)
 
 <BR>
 <BR>
+
 ## Normalized dataset
 
 ![4](https://github.com/user-attachments/assets/7a31638e-8a48-4db0-8328-87c88ccaff02)
