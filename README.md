@@ -119,36 +119,36 @@ print("\nLenght of X_test ",len(X_test))
 ```
 
 ## OUTPUT:
-### Missing Data
+## Missing Data
 ![1](https://github.com/user-attachments/assets/2fd31bf1-42f4-4e1f-86dd-3aa6defec3d0)
 
 
-### Number of duplicates
+## Number of duplicates
 ![2](https://github.com/user-attachments/assets/8e7ba1c7-9da1-4eee-b676-574228960a3a)
 
 
 <br>
-### Outliers
+## Outliers
 
 ![3](https://github.com/user-attachments/assets/2c42b7d1-cedf-49a6-8c00-28fe2f759499)
 
 <BR>
 <BR>
-### Normalized dataset
+## Normalized dataset
 
 ![4](https://github.com/user-attachments/assets/7a31638e-8a48-4db0-8328-87c88ccaff02)
 
 
 <BR>
 
-### X and Y
+## X and Y
 ![5](https://github.com/user-attachments/assets/7ec84aeb-3b22-44fb-98c0-eba3dc58631b)
 
 
 <BR>
 <BR>
   
-### X_train,X_test,Y_train,Y_test
+## X_train,X_test,Y_train,Y_test
 ![6](https://github.com/user-attachments/assets/4f3001bc-35be-48ba-8c1b-157e63d35b8d)
 
 
