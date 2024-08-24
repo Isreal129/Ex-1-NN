@@ -120,15 +120,17 @@ print("\nLenght of X_test ",len(X_test))
 
 ## OUTPUT:
 ### Missing Data
-![1](https://github.com/user-attachments/assets/aa288f90-fd62-4810-ae6a-aa8caa5343c7)
+![1](https://github.com/user-attachments/assets/2fd31bf1-42f4-4e1f-86dd-3aa6defec3d0)
 
 
 ### Number of duplicates
-![2](https://github.com/user-attachments/assets/170f52a2-645e-47c1-901a-8aea7882e59d)
+![2](https://github.com/user-attachments/assets/8e7ba1c7-9da1-4eee-b676-574228960a3a)
+
 
 <br>
 ### Outliers
-![3](https://github.com/user-attachments/assets/b9f97484-ba6a-4d2a-86e9-4423653a9f9e)
+![3](https://github.com/user-attachments/assets/b9f643e8-0652-4a6d-8085-3b31ed48569f)
+
 
 <BR>
 <BR>
