@@ -120,28 +120,34 @@ print("\nLenght of X_test ",len(X_test))
 
 ## OUTPUT:
 ### Missing Data
-![alt text](<Screenshot 2024-08-23 213007.png>)
+![1](https://github.com/user-attachments/assets/aa288f90-fd62-4810-ae6a-aa8caa5343c7)
+
 
 ### Number of duplicates
-![alt text](<Screenshot 2024-08-23 213030.png>)
+![2](https://github.com/user-attachments/assets/170f52a2-645e-47c1-901a-8aea7882e59d)
+
 <br>
 ### Outliers
-![alt text](<Screenshot 2024-08-23 213017.png>)
+![3](https://github.com/user-attachments/assets/b9f97484-ba6a-4d2a-86e9-4423653a9f9e)
+
 <BR>
 <BR>
 ### Normalized dataset
-![alt text](<Screenshot 2024-08-23 213103.png>)
+![4](https://github.com/user-attachments/assets/57df5f62-c931-4d3e-9967-2c8653974f2c)
+
 
 <BR>
 
 ### X and Y
-![alt text](<Screenshot 2024-08-23 213145.png>)
+![5](https://github.com/user-attachments/assets/7ec84aeb-3b22-44fb-98c0-eba3dc58631b)
+
 
 <BR>
 <BR>
   
 ### X_train,X_test,Y_train,Y_test
-![alt text](<Screenshot 2024-08-23 213200.png>)
+![6](https://github.com/user-attachments/assets/4f3001bc-35be-48ba-8c1b-157e63d35b8d)
+
 
 <BR>
 
