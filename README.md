@@ -63,97 +63,96 @@ Splitting the data into test and train<BR>
 
 ##  PROGRAM:
 ```
-#import libraries
-
+#Import Libraries
+from google.colab import files
 import pandas as pd
 import io
-import seaborn as sns
-import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 
-#Read the dataset from drive
-d=pd.read_csv("Churn_Modelling.csv")
+#Read the dataset
+df=pd.read_csv("/content/Churn_Modelling.csv")
+
+#Check the missing data
+df.isnull().sum()
+
 # Finding Missing Values
-print(d.isnull().sum())
+print(df.isnull().sum())
 
 #Check for Duplicates
-print(d.duplicated().sum())
+df.duplicated()
 
-#Detect Outliers
-plt.figure(figsize=(6,4))
-sns.scatterplot(x='Age', y='Exited', data=d)
-plt.title('Scatter plot of Age vs. Exited')
-plt.show()
+#Assigning Y
+y = df.iloc[:, -1].values
+print(y)
+
+#Check for duplicates
+df.duplicated()
+
+#Check for outliers
+df.describe()
+print(df.describe())
+
+#Dropping string values data from dataset
+data = df.drop(['Surname', 'Geography','Gender'], axis=1)
+data.head()
 
 #Normalize the dataset
-# Create an instance of MinMaxScaler
-scaler = MinMaxScaler()
+scaler=MinMaxScaler()
+df1=pd.DataFrame(scaler.fit_transform(data))
+print(df1)
 
-# Define the columns to be normalized
-columns = ['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'EstimatedSalary']
+#Split the dataset
+X=df.iloc[:,:-1].values
+y=df.iloc[:,-1].values
+print(X)
+print(y)
 
-# Normalize the specified columns
-d[columns] = scaler.fit_transform(d[columns])
+#Splitting the data for training & testing
+X_train ,X_test ,y_train,y_test=train_test_split(X,y,test_size=0.2)
 
-# Display the normalized dataset
-print("NORMALIZED DATASET\n",d)
-
-#split the dataset into input and output
-X = d.iloc[:,:-1].values
-print("INPUT(X)\n",X)
-y = d.iloc[:,-1].values
-print("OUTPUT(y)\n",y)
-
-#splitting the data for training & Testing
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
+#Training and testing model
 print("X_train\n")
 print(X_train)
 print("\nLenght of X_train ",len(X_train))
 print("\nX_test\n")
 print(X_test)
-print("\nLenght of X_test ",len(X_test))
+print("\nLenght of X_test ",len(X_test))
 ```
-
 ## OUTPUT:
-## Missing Data
-![1](https://github.com/user-attachments/assets/2fd31bf1-42f4-4e1f-86dd-3aa6defec3d0)
+### Missing Values:
+<br>
 
+![1](https://github.com/user-attachments/assets/3af96bcb-8bc0-4407-ba2c-5c19224b7d1e)
+<br>
+<br>
+<br>
+<br>
 
-## Number of duplicates
-![2](https://github.com/user-attachments/assets/8e7ba1c7-9da1-4eee-b676-574228960a3a)
+### Outliers:
+<br>
 
+![2](https://github.com/user-attachments/assets/95e926f6-d411-482f-99e7-d6a0192c4111)
 
 <br>
 
-## Outliers
+### Normalized dataset:
+<br>
 
-![3](https://github.com/user-attachments/assets/2c42b7d1-cedf-49a6-8c00-28fe2f759499)
+![3](https://github.com/user-attachments/assets/d4fff95e-b747-4477-8e90-92a230ff93fb)
 
-<BR>
-<BR>
-
-## Normalized dataset
-
-![4](https://github.com/user-attachments/assets/7a31638e-8a48-4db0-8328-87c88ccaff02)
-
-
-<BR>
-
-## X and Y
-![5](https://github.com/user-attachments/assets/7ec84aeb-3b22-44fb-98c0-eba3dc58631b)
-
-
-<BR>
-<BR>
   
-## X_train,X_test,Y_train,Y_test
-![6](https://github.com/user-attachments/assets/4f3001bc-35be-48ba-8c1b-157e63d35b8d)
+### Input & Output Values:
+<br>
 
+![4](https://github.com/user-attachments/assets/64d0988e-3d02-458b-806d-e0e6bdb29c70)
 
-<BR>
+### Splitting the data for training & Testing:
+<br>
+
+![5](https://github.com/user-attachments/assets/e8efc242-91f5-4268-9392-0610103a1ca6)
+<br>
 
 ## RESULT:
 Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
